@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/websetup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyA4cu1ZKqbsHSb5BYfWLzljvzG3qpGoiM8",
+    authDomain: "quizapp-ffccf.firebaseapp.com",
+    databaseURL: "https://quizapp-ffccf-default-rtdb.firebaseio.com",
+    projectId: "quizapp-ffccf",
+    storageBucket: "quizapp-ffccf.appspot.com",
+    messagingSenderId: "593045660496",
+    appId: "1:593045660496:web:15da50145489dfc65fc255",
+    measurementId: "G-ETKJRRD9QM"
+  };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.analytics();
+    </script>
+</head>
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Quiz Application</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
